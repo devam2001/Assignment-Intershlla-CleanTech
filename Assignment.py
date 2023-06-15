@@ -5,7 +5,7 @@ import matplotlib.font_manager as fm
 import matplotlib.dates as mdates
 from numpy.random import random
 
-file = "C:/Users/devam/OneDrive/Desktop/CleanTech/Assignment_Dataset.xlsx"
+file = "Assignment_Dataset.xlsx"
 df = pd.read_excel(file)
 df['PR_MA_30'] = df['PR'].rolling(window=30).mean()
 
